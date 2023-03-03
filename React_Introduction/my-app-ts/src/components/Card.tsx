@@ -1,4 +1,5 @@
 import { Box, Center, Input } from "@chakra-ui/react"
+import { login } from "../services/login"
 import { Btt } from "./Btt/Btt"
 import { Header } from "./Header/Hearder"
 
@@ -16,7 +17,7 @@ export const Card = () => {
 
           <Input placeholder='password' />
           
-          <Btt />
+          <Btt onClick={login}/>
         </Box>
       </Box>
     )
