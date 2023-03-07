@@ -1,7 +1,8 @@
 import { Center } from "@chakra-ui/react"
+import { MouseEventHandler } from "react"
 
 interface Btt {
-    onClick: () => void
+    onClick: MouseEventHandler
 }
 
 export const Btt = ({ onClick }: Btt) => {
